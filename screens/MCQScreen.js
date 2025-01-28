@@ -11,17 +11,18 @@ const subjects = [
     thumbnail: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=500",
     description: "Detailed study of the Indian Constitution including all its parts and provisions.",
   },
+
   {
     id: "2",
-    title: "Indian Polity",
-    thumbnail: "https://example.com/indian-polity-thumbnail.jpg",
-    description: "Understanding the political structure of India, its governance and processes.",
-  },
-  {
-    id: "3",
     title: "Indian Economy",
     thumbnail: "https://example.com/indian-economy-thumbnail.jpg",
     description: "Overview of India's economy, economic planning, and policy development.",
+  },
+  {
+    id: "3",
+    title: "Indian Polity",
+    thumbnail: "https://example.com/indian-polity-thumbnail.jpg",
+    description: "Understanding the political structure of India, its governance and processes.",
   },
   // Add more subjects here...
 ];
