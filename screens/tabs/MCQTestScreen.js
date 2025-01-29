@@ -16,3 +16,30 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
+
+
+
+
+
+
+
+
+// // screens/MCQTestScreen.js
+// import React from "react";
+// import { View, Text } from "react-native";
+
+// const data = [
+//   { id: "1", title: "Topic 1", content: "Details of Topic 1" },
+//   { id: "2", title: "Topic 2", content: "Details of Topic 2" },
+//   { id: "3", title: "Topic 3", content: "Details of Topic 3" },
+// ];
+
+// const MCQTestScreen = ({ route }) => {
+//   return (
+//     <View style={{ flex: 1, padding: 20 }}>
+//       <Text style={{ fontSize: 18 }}>{route.params.item.content}</Text>
+//     </View>
+//   );
+// };
+
+// export default MCQTestScreen;

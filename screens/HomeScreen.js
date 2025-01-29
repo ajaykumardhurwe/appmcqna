@@ -4,24 +4,26 @@ import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity } from 'react
 const courses = [
   {
     id: '1',
-    title: 'Comprehensive English Learning Topics for All Levels',
+    title: 'सभी स्तरों के लिए व्यापक इंग्लिश लर्निंग टॉपिक्स (Comprehensive English Learning Topics for All Levels)',
     images: [
       'https://raw.githubusercontent.com/ajaykumardhurwe/pyqbook/refs/heads/main/pyqbook/0.jpeg',
       'https://raw.githubusercontent.com/ajaykumardhurwe/pyqbook/refs/heads/main/pyqbook/1.jpeg',
       'https://raw.githubusercontent.com/ajaykumardhurwe/pyqbook/refs/heads/main/pyqbook/2.jpeg',
       'https://raw.githubusercontent.com/ajaykumardhurwe/pyqbook/refs/heads/main/pyqbook/3.jpeg',
     ],
-    description: 'Unlock your potential in English with topics designed to enhance your grammar, vocabulary, writing, speaking, and comprehension skills. Whether it’s mastering tenses, improving public speaking, or exploring creative writing, these categories cater to learners of all levels. Dive into literature analysis, practice exam-specific topics, and develop techniques for effective communication. Perfect for students, professionals, and exam aspirants, this guide ensures you gain confidence and expertise in every aspect of English.',
+    description: 'अपने इंग्लिश कौशल को निखारें उन टॉपिक्स के साथ, जो आपके व्याकरण, शब्दावली, लेखन, बोलने और समझने की क्षमताओं को बेहतर बनाने के लिए डिज़ाइन किए गए हैं। चाहे वह काल (tenses) में महारत हासिल करना हो, सार्वजनिक भाषण को सुधारना हो, या रचनात्मक लेखन को एक्सप्लोर करना हो, ये श्रेणियां सभी स्तरों के शिक्षार्थियों के लिए उपयुक्त हैं। साहित्यिक विश्लेषण (literature analysis) में गहराई से उतरें, परीक्षा-विशिष्ट विषयों का अभ्यास करें, और प्रभावी संचार (effective communication) के लिए नई तकनीकों को विकसित करें। यह गाइड छात्रों, पेशेवरों और परीक्षा अभ्यर्थियों के लिए एकदम सही है, जो इंग्लिश के हर पहलू में आत्मविश्वास और विशेषज्ञता प्राप्त करना चाहते हैं। (Unlock your potential in English with topics designed to enhance your grammar, vocabulary, writing, speaking, and comprehension skills. Whether it’s mastering tenses, improving public speaking, or exploring creative writing, these categories cater to learners of all levels. Dive into literature analysis, practice exam-specific topics, and develop techniques for effective communication. Perfect for students, professionals, and exam aspirants, this guide ensures you gain confidence and expertise in every aspect of English.)'
   },
-  {
-    id: '2',
-    title: 'Course 2',
-    images: [
-      'https://via.placeholder.com/150',
-      'https://via.placeholder.com/150',
-    ],
-    description: 'Description of Course 2',
-  },
+  
+
+  // {
+  //   id: '2',
+  //   title: 'Course 2',
+  //   images: [
+  //     'https://via.placeholder.com/150',
+  //     'https://via.placeholder.com/150',
+  //   ],
+  //   description: 'Description of Course 2',
+  // },
 ];
 
 // Separate Card Component
