@@ -247,7 +247,9 @@ export default function AppNavigator() {
             if (route.name === "Home") iconName = focused ? "home" : "home-outline";
             else if (route.name === "MCQ") iconName = focused ? "list" : "list-outline";
             else if (route.name === "Job") iconName = focused ? "briefcase" : "briefcase-outline";
-            else if (route.name === "Services") iconName = focused ? "information" : "information-outline";
+            else if (route.name === "Services") iconName = focused ? "compass" : "compass-outline";
+            // else if (route.name === "Contact Us") iconName = focused ? "information" : "information-outline";
+
             else if (route.name === "Profile") iconName = focused ? "person" : "person-outline";
             return <Ionicons name={iconName} size={size} color={color} />;
           },
