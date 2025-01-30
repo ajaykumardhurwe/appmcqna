@@ -153,6 +153,7 @@ import JobDetails from "./screens/JobDetails";
 import CourseDetailsScreen from "./screens/CourseDetailsScreen";
 import ClassroomScreen from "./screens/ClassroomScreen";
 import TestNumbers from "./screens/TestNumbers";
+import ServicesScreen from "./screens/ServicesScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -246,7 +247,7 @@ export default function AppNavigator() {
             if (route.name === "Home") iconName = focused ? "home" : "home-outline";
             else if (route.name === "MCQ") iconName = focused ? "list" : "list-outline";
             else if (route.name === "Job") iconName = focused ? "briefcase" : "briefcase-outline";
-            else if (route.name === "About Us") iconName = focused ? "information" : "information-outline";
+            else if (route.name === "Services") iconName = focused ? "information" : "information-outline";
             else if (route.name === "Profile") iconName = focused ? "person" : "person-outline";
             return <Ionicons name={iconName} size={size} color={color} />;
           },
@@ -256,7 +257,7 @@ export default function AppNavigator() {
 
         <Tab.Screen name="MCQ" component={MCQStackNavigator} />
         <Tab.Screen name="Job" component={JobScreen} />
-        <Tab.Screen name="About Us" component={AboutUsScreen} />
+        <Tab.Screen name="Services" component={ServicesScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
     </NavigationContainer>
