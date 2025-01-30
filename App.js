@@ -154,9 +154,16 @@ import CourseDetailsScreen from "./screens/CourseDetailsScreen";
 import ClassroomScreen from "./screens/ClassroomScreen";
 import TestNumbers from "./screens/TestNumbers";
 import ServicesScreen from "./screens/ServicesScreen";
-
+import WebDevelopmentScreen from "./screens/services/WebDevelopmentScreen";
+import GraphicsDesignScreen from "./screens/services/GraphicsDesignScreen";
+import SEOOptimizationScreen from "./screens/services/SEOOptimizationScreen";
+import MCQTestScreen from "./screens/services/MCQTestScreen";
+import JobConsultancyScreen from "./screens/services/JobConsultancyScreen";
+import EFormFillupScreen from "./screens/services/EFormFillupScreen";
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
+
+
 
 // function MCQStackNavigator() {
 //   return (
@@ -183,6 +190,7 @@ function MCQStackNavigator() {
 
       <Stack.Screen name="MCQTest" component={MCQTest} />
       <Stack.Screen name="JobDetails" component={JobDetails} />
+      
       {/* <Stack.Screen name="CourseDetails" component={CourseDetailsScreen} /> */}
       {/* <Stack.Screen name="Classroom" component={ClassroomScreen} /> */}
     </Stack.Navigator>
@@ -211,7 +219,22 @@ function MCQStackNavigator() {
 
 
 
+function ServicesStackNavigator() {
+  return (
 
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Services" component={ServicesScreen} />
+        <Stack.Screen name="WebDevelopment" component={WebDevelopmentScreen} />
+        <Stack.Screen name="GraphicsDesign" component={GraphicsDesignScreen} />
+        <Stack.Screen name="SEOOptimization" component={SEOOptimizationScreen} />
+        <Stack.Screen name="MCQTest" component={MCQTestScreen} />
+        <Stack.Screen name="JobConsultancy" component={JobConsultancyScreen} />
+        <Stack.Screen name="EFormFillup" component={EFormFillupScreen} />
+        {/* Add other screens here */}
+      </Stack.Navigator>
+    
+  );
+}
 
 
 
@@ -259,7 +282,7 @@ export default function AppNavigator() {
 
         <Tab.Screen name="MCQ" component={MCQStackNavigator} />
         <Tab.Screen name="Job" component={JobScreen} />
-        <Tab.Screen name="Services" component={ServicesScreen} />
+        <Tab.Screen name="Services" component={ServicesStackNavigator} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
     </NavigationContainer>
