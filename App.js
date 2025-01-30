@@ -160,10 +160,32 @@ import SEOOptimizationScreen from "./screens/services/SEOOptimizationScreen";
 import MCQTestScreen from "./screens/services/MCQTestScreen";
 import JobConsultancyScreen from "./screens/services/JobConsultancyScreen";
 import EFormFillupScreen from "./screens/services/EFormFillupScreen";
+import SignUpScreen from "./screens/SignUpScreen";
+import LoginScreen from "./screens/LoginScreen";
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
 
+// making drawer 
+import { createDrawerNavigator } from '@react-navigation/drawer';
+const Drawer = createDrawerNavigator();
+
+function ProfileStackNavigator() {
+  return (
+ 
+      <Drawer.Navigator
+        screenOptions={{
+          drawerPosition: 'right', // Move drawer to right side
+          headerShown: false, // Hide default headers
+        }}
+      >
+        <Drawer.Screen name="Profile" component={ProfileScreen} />
+        <Drawer.Screen name="SignUp" component={SignUpScreen} />
+        <Drawer.Screen name="Login" component={LoginScreen} />
+      </Drawer.Navigator>
+  
+  );
+}
 
 // function MCQStackNavigator() {
 //   return (
@@ -196,6 +218,9 @@ function MCQStackNavigator() {
     </Stack.Navigator>
   );
 }
+
+
+
 
 
 // function HomeStackNavigator() {
@@ -283,7 +308,7 @@ export default function AppNavigator() {
         <Tab.Screen name="MCQ" component={MCQStackNavigator} />
         <Tab.Screen name="Job" component={JobScreen} />
         <Tab.Screen name="Services" component={ServicesStackNavigator} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="Profile" component={ProfileStackNavigator} />
       </Tab.Navigator>
     </NavigationContainer>
   );
