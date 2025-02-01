@@ -36,7 +36,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 const MCQTestScreen = () => {
   const openWebsite = () => {
-    Linking.openURL("https://example.com/mcqtest"); 
+    Linking.openURL("https://ajaydhurwe.tech/"); 
   };
 
   return (

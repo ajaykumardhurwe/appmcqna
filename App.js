@@ -165,7 +165,7 @@ import LoginScreen from "./screens/LoginScreen";
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-
+// import JobConsultancyScreen from "./screens/services/JobConsultancyScreen";
 // making drawer 
 import { createDrawerNavigator } from '@react-navigation/drawer';
 const Drawer = createDrawerNavigator();
@@ -281,6 +281,17 @@ function HomeStackNavigator() {
   );
 }
 
+function JobStackNavigator() {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Screen name="JobScreen" component={JobScreen} options={{ title: "Jobs List" }} />
+    <Stack.Screen name="JobDetails" component={JobDetails} options={{ title: "Job Details" }} />
+    <Stack.Screen name="JobConsultancy" component={JobConsultancyScreen} options={{ title: "Job Details" }} />
+    
+    </Stack.Navigator>
+  );
+}
+
 
 
 
@@ -306,7 +317,7 @@ export default function AppNavigator() {
         <Tab.Screen name="Home" component={HomeStackNavigator} />
 
         <Tab.Screen name="MCQ" component={MCQStackNavigator} />
-        <Tab.Screen name="Job" component={JobScreen} />
+        <Tab.Screen name="Job" component={JobStackNavigator} />
         <Tab.Screen name="Services" component={ServicesStackNavigator} />
         <Tab.Screen name="Profile" component={ProfileStackNavigator} />
       </Tab.Navigator>

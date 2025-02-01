@@ -37,7 +37,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 const GraphicsDesignScreen = () => {
   const openWebsite = () => {
-    Linking.openURL("https://example.com/graphicsdesign"); 
+    Linking.openURL("https://ajaydhurwe.tech/"); 
   };
 
   return (

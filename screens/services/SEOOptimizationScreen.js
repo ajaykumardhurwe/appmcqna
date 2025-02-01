@@ -34,7 +34,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 const SEOOptimizationScreen = () => {
   const openWebsite = () => {
-    Linking.openURL("https://example.com/seooptimization");
+    Linking.openURL("https://ajaydhurwe.tech/");
   };
 
   return (

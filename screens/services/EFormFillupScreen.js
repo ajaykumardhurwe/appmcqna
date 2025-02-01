@@ -148,7 +148,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 const EFormFillupScreen = () => {
   const openWebsite = () => {
-    Linking.openURL("https://example.com/eformfillup"); 
+    Linking.openURL("https://ajaydhurwe.tech/"); 
   };
 
   return (
